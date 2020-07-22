@@ -56,7 +56,7 @@ export default class FetchData extends React.Component {
     const city = e.target.elements.city.value;
 
     const url =
-      `http://api.openweathermap.org/data/2.5/weather?q=${city},${country}&units=metric&appid=` +
+      `https://cors-anywhere.herokuapp.com/http://api.openweathermap.org/data/2.5/weather?q=${city},${country}&units=metric&appid=` +
       api_key;
     const response = await fetch(url);
     const data = await response.json();
