@@ -56,7 +56,7 @@ export default class FetchData extends React.Component {
     const city = e.target.elements.city.value;
 
     const url =
-      `https://api.openweathermap.org/data/2.5/weather?q=${city},${country}&units=metric&appid=` +
+      `http://api.openweathermap.org/data/2.5/weather?q=${city},${country}&units=metric&appid=` +
       api_key;
     const response = await fetch(url);
     const data = await response.json();
