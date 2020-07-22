@@ -12,7 +12,7 @@ const Weather = (props) => {
         </div>
         <div>{props.temp}°</div>
         <div className="weather-icons">
-          <img alt="hello" src={props.weatherIcon}></img>
+          {/* <img alt="hello" src={props.weatherIcon}></img> */}
         </div>
         <div>
           <div className="weather-description">{props.description}</div>
