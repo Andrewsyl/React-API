@@ -1,9 +1,9 @@
 import React from "react";
-import pic from "../dublin-overview.jpeg";
+// import pic from "../dublin-overview.jpeg";
 
 const Weather = (props) => {
   console.log(props);
-  document.body.style.backgroundImage = `url(${pic})`;
+  // document.body.style.backgroundImage = `url(${pic})`;
   return (
     <div className="row form-group">
       <div className="container">
@@ -12,7 +12,7 @@ const Weather = (props) => {
         </div>
         <div>{props.temp}°</div>
         <div className="weather-icons">
-          {/* <img alt="hello" src={props.weatherIcon}></img> */}
+          <img alt="hello" src={props.weatherIcon}></img>
         </div>
         <div>
           <div className="weather-description">{props.description}</div>
