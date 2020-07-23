@@ -7,12 +7,12 @@ const Weather = (props) => {
   return (
     <div className="row form-group">
       <div className="container">
-        <div className="col-sm mt-2">
+        <div className="py-4 col-sm mt-2">
           {props.cityname}, {props.country}
         </div>
-        <div>{props.temp}°</div>
-        <div className="weather-icons">
-          <img alt="hello" src={props.weatherIcon}></img>
+        <div>{props.temp ? props.temp + "°" : ""}</div>
+        <div className="py-4 weather-icons">
+          <img alt="" src={props.weatherIcon}></img>
         </div>
         <div>
           <div className="weather-description">{props.description}</div>
