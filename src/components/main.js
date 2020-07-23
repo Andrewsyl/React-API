@@ -13,6 +13,8 @@ export default class FetchData extends React.Component {
   state = {
     city: "",
     country: "",
+    sunrise:"",
+    sunset:"",
     icon: undefined,
     main: undefined,
     celsius: undefined,
@@ -66,6 +68,8 @@ export default class FetchData extends React.Component {
       country: data.sys.country,
       temp: data.main.temp,
       description: data.weather[0].description,
+      sunrise:data.sys.sunrise,
+      sunset:data.sys.sunset
     });
 
     this.get_WeatherIcon(data.weather[0].id);
@@ -81,6 +85,8 @@ export default class FetchData extends React.Component {
           country={this.state.country}
           weatherIcon={this.state.icon}
           description={this.state.description}
+          sunrise={this.state.sunrise}
+          sunset={this.state.sunset}
         />
       </div>
     );
