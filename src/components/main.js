@@ -62,7 +62,7 @@ export default class FetchData extends React.Component {
     const data = await response.json();
     console.log(data);
     this.setState({
-      city: data.name,
+      city: data.name + ", ",
       country: data.sys.country,
       temp: data.main.temp,
       description: data.weather[0].description,
