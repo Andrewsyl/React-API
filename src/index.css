@@ -11,6 +11,7 @@ html {
   min-height: 100%;
   overflow: hidden;
   color: white !important;
+  text-shadow: 2px 1px 7px rgba(0, 0, 0, 0.58);
 }
 
 code {
@@ -25,4 +26,26 @@ code {
 
 .weather-description {
   text-transform: capitalize;
+}
+
+.weather-data {
+  font-size: 20px;
+}
+
+form {
+  margin-top: 3rem;
+}
+
+form input[name="city"],
+form input[name="country"] {
+  background-color: transparent;
+  color: white;
+  border: none;
+  border-bottom: 2px solid whitesmoke;
+  border-radius: 0;
+  margin-right: 35px;
+}
+
+input {
+  border-right: 35px;
 }

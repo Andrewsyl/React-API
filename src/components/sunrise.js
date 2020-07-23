@@ -13,7 +13,7 @@ const Sun = (props) => {
   // Will display time in 10:30:23 format
   var formattedTime = hours + ":" + minutes.substr(-2);
 
-  return <div>{props.sunset ? formattedTime : ""}</div>;
+  return <div>{props.sunset ? "Sunset: " + formattedTime : ""}</div>;
 };
 
 export default Sun;

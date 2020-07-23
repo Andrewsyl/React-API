@@ -11,7 +11,7 @@ const Form = (props) => {
           name="country"
           placeholder="Country"
         />
-        <button>Submit</button>
+        <button className="btn btn-warning">Get Weather</button>
       </form>
     </div>
   );
