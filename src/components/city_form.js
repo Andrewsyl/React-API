@@ -11,7 +11,9 @@ const Form = (props) => {
           name="country"
           placeholder="Country"
         />
-        <button className="btn btn-warning">Get Weather</button>
+        <div className="py-2">
+          <button className="btn btn-warning">Get Weather</button>
+        </div>
       </form>
     </div>
   );
