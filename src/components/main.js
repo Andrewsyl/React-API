@@ -11,8 +11,8 @@ const api_key = "77a4bb8eb611296e79652eace9660c3d";
 
 export default class FetchData extends React.Component {
   state = {
-    city: "Dublin",
-    country: "IE",
+    city: "",
+    country: "",
     icon: undefined,
     main: undefined,
     celsius: undefined,
